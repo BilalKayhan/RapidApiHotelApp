@@ -22,7 +22,7 @@ public class LoginController : Controller
     {
         if (ModelState.IsValid)
         {
-            var result = await _signInManager.PasswordSignInAsync(loginUserDto.UserName, loginUserDto.Password, false, false);
+            var result = await _signInManager.PasswordSignInAsync(loginUserDto.Username, loginUserDto.Password, false, false);
             if (result.Succeeded)
             {
                 return RedirectToAction("Index", "Staff");
