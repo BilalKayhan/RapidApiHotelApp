@@ -41,4 +41,9 @@ public class AppUserManager : IAppUserService
     {
         return _appUserDal.UserListWithWorkLocation();
     }
+
+    public List<AppUser> TUsersListWithWorkLocations()
+    {
+        return _appUserDal.UsersListWithWorkLocations();
+    }
 }
