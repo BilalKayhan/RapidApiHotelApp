@@ -3,4 +3,5 @@
 namespace HotelProject.DataAccessLayer.Abstract;
 public interface IStaffDal : IGenericDal<Staff>
 {
+    int GetStaffCount();
 }

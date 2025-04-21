@@ -27,6 +27,11 @@ public class BookingManager : IBookingService
         _bookingDal.Delete(t);
     }
 
+    public int TGetBookingCount()
+    {
+        return _bookingDal.GetBookingCount();
+    }
+
     public Booking TGetById(int id)
     {
         return _bookingDal.GetById(id);

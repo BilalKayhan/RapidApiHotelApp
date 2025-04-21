@@ -26,4 +26,11 @@ public class EfBookingDal : GenericRepository<Booking>, IBookingDal
         values.Status = "Onaylandı";
         context.SaveChanges();
     }
+
+    public int GetBookingCount()
+    {
+        var context = new Context();
+        var value = context.Bookings.Count();
+        return value;
+    }
 }
