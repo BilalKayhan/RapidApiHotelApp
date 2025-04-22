@@ -1,5 +1,6 @@
-﻿namespace HotelProject.EntityLayer.Concrete;
-public class Booking
+﻿namespace HotelProject.WebUI.Dtos.BookingDto;
+
+public class ResultLast6BookingDto
 {
     public int BookingID { get; set; }
     public string? Name { get; set; }
